@@ -48,8 +48,6 @@ asynq:
 asynqmon:                     # 新增：监控面板配置
   enabled: true               # 是否启用 Web UI
   http_addr: 8002          # 监听端口（可自定义）
-  username: "admin"           # 基本认证用户名（可选）
-  password: "admin" # 基本认证密码（强烈建议设置）
 log:
   level: "debug"              # debug / info / warn / error
   format: "json"              # json / console

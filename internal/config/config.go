@@ -66,10 +66,8 @@ type AsynqConfig struct {
 	Queues            map[string]int `mapstructure:"queues"`
 }
 type AsynqmonConfig struct {
-	Enabled  bool   `mapstructure:"enabled"`
-	HttpAddr int    `mapstructure:"http_addr"`
-	Username string `mapstructure:"username"`
-	Password string `mapstructure:"password"`
+	Enabled  bool `mapstructure:"enabled"`
+	HttpAddr int  `mapstructure:"http_addr"`
 }
 type LogConfig struct {
 	Level          string `mapstructure:"level"`
