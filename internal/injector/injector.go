@@ -1,6 +1,7 @@
 package injector
 
 import (
+	"gin-api/internal/api/health"
 	"gin-api/internal/config"
 
 	"github.com/samber/do/v2"
@@ -14,5 +15,8 @@ func SetupInjector() do.Injector {
 	do.Provide(injector, config.NewDB)
 	do.Provide(injector, config.NewRedis)
 	do.Provide(injector, config.NewQueue)
+
+	// 注册 handlers
+	do.Provide(injector, health.New)
 	return injector
 }
